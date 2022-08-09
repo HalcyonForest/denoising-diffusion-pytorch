@@ -1,6 +1,7 @@
 import math
 import copy
 import torch
+import torchvision.transforms as transforms
 from torch import nn, einsum
 import torch.nn.functional as F
 from inspect import isfunction
