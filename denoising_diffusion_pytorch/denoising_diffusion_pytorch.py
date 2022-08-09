@@ -789,7 +789,7 @@ class Trainer(object):
 
                 for _ in range(self.gradient_accumulate_every):
                     # added labels
-                    labels, data = next(self.dl)
+                    data, labels = next(self.dl)
                     data = data.to(device)
 
                     with self.accelerator.autocast():
